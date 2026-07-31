@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Places</title>
+<style>
+body{
+margin:0;
+text-align:center;
+background-image:url("https://i.pinimg.com/564x/e5/15/5f/e5155fde000d8088b153efb626fa71ce.jpg");
+background-size:1950px 950px;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
+h2{
+color:white;
+text-shadow:2px 2px 5px black;
+}
+.places{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+margin-top:30px;
+}
+.place{
+width:900px;
+background:white;
+border-radius:15px;
+box-shadow:0px 0px 10px gray;
+display:flex;
+align-items:center;
+padding:20px;
+gap:30px;
+}
+.place img{
+width:300px;
+height:200px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+<h1>Welcome to Travel World</h1>
+<div class="places">
+<div class="place">
+<img src="https://plus.unsplash.com/premium_photo-1697729701846-e34563b06d47?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29hJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D">
+<div>
+<h2 style="color:black; text-shadow:none;">Beach Destinations<h2>
+<button onclick="openBeach()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://hblimg.mmtcdn.com/content/hubble/img/kasol/mmt/destination/m_destination-kasol-landscape_l_400_640.jpg">
+<div>
+<h2 style="color:black; text-shadow:none;">Hill Stations</h2>
+<button onclick="openHill()" 
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsrTVw9oRkeJTd0g4pvRY3_DUDbdh88utpmQbnxByjIhqFoV53NCcH5eA&s=10">
+<div>
+<h2 style="color:black; text-shadow:none;">Historical Destinations</h2>
+<button onclick="openHistorical()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach(){
+    window.location.href="beach.html";
+}
+
+function openHistorical(){
+    window.location.href="historical.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://slovoproslovo.info/wp-content/uploads/2021/04/ukraine_mountains_499280.jpg">
+<div>
+<h2 style="color:black; text-shadow:none;">Nature Destinations</h2>
+<button onclick="openNature()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach(){
+    window.location.href="beach.html";
+}
+
+function openHill(){
+    window.location.href="hill.html";
+}
+
+function openHistorical(){
+    window.location.href="historical.html";
+}
+
+function openNature(){
+    window.location.href="nature.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxzRA3UW3_NcdRiy5o5--lICEfYSmkNCfgE6wZLRYLfRhOOPvQObhFLs&s=10">
+<div>
+<h2 style="color:black; text-shadow:none;">Spiritual Destinations</h2>
+<button onclick="openSpiritual()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openWildlife()
+{
+    window.location.href="spiritual.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://delightedjourney.com/wp-content/uploads/2026/01/tiger-e1768635901376.png">
+<div>
+<h2 style="color:black; text-shadow:none;">Wildlife Destinations</h2>
+<button onclick="openWildlife()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openSpiritual()
+{
+    window.location.href="spiritual.html";
+}
+
+function openWildlife()
+{
+    window.location.href="wildlife.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsYEyIj41NQbkqlYhKEhOYG8VcGrW_DDGigtg5ndjTTQF6zicpsoQtw&s=10">
+<div>
+<h2 style="color:black; text-shadow:none;">Road Trip Destinations</h2>
+<button onclick="openRoadTrip()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openSpiritual()
+{
+    window.location.href="spiritual.html";
+}
+
+function openWildlife()
+{
+    window.location.href="wildlife.html";
+}
+
+function openRoadTrip()
+{
+    window.location.href="roadtrip.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://www.shutterstock.com/shutterstock/videos/4055618227/thumb/1.jpg?ip=x480">
+<div>
+<h2 style="color:black; text-shadow:none;">Waterfall Destinations</h2>
+<button onclick="openWaterfall()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openSpiritual()
+{
+    window.location.href="spiritual.html";
+}
+
+function openWildlife()
+{
+    window.location.href="wildlife.html";
+}
+
+function openRoadTrip()
+{
+    window.location.href="roadtrip.html";
+}
+
+function openWaterfall()
+{
+    window.location.href="waterfall.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://www.flamingotravels.co.in/blog/wp-content/uploads/2021/08/Best-Adventure2.jpg">
+<div>
+<h2 style="color:black; text-shadow:none;">Adventure Destinations</h2>
+<button onclick="openAdventure()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openSpiritual()
+{
+    window.location.href="spiritual.html";
+}
+
+function openWildlife()
+{
+    window.location.href="wildlife.html";
+}
+
+function openRoadTrip()
+{
+    window.location.href="roadtrip.html";
+}
+
+function openWaterfall()
+{
+    window.location.href="waterfall.html";
+}
+
+function openAdventure()
+{
+    window.location.href="adventure.html";
+}
+</script>
+</div>
+<div class="place">
+<img src="https://www.ftd.travel/upload/attraction_image/2012-11-23-01-16-32Minicoy.jpeg">
+<div>
+<h2 style="color:black; text-shadow:none;">Island Destinations</h2>
+<button onclick="openIsland()"
+style="width:180px; height:50px; border-radius:30px; background-color:lightgrey; color:black; border:none; font-size:18px; cursor:pointer;">
+Checkout
+</button>
+</div>
+<script>
+function openBeach()
+{
+    window.location.href="beach.html";
+}
+
+function openHill()
+{
+    window.location.href="hill.html";
+}
+
+function openHistorical()
+{
+    window.location.href="historical.html";
+}
+
+function openNature()
+{
+    window.location.href="nature.html";
+}
+
+function openSpiritual()
+{
+    window.location.href="spiritual.html";
+}
+
+function openWildlife()
+{
+    window.location.href="wildlife.html";
+}
+
+function openRoadTrip()
+{
+    window.location.href="roadtrip.html";
+}
+
+function openWaterfall()
+{
+    window.location.href="waterfall.html";
+}
+
+function openAdventure()
+{
+    window.location.href="adventure.html";
+}
+function openIsland()
+{
+    window.location.href="island.html";
+}
+</script>
+</div>
+</div>
+</body>
+</html>
