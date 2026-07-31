@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beach Destinations</title>
+<style>
+body{
+margin:0;
+text-align:center;
+background-image:url("https://i.pinimg.com/564x/e5/15/5f/e5155fde000d8088b153efb626fa71ce.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
+h1{
+color:black;
+padding:20px;
+margin:0;
+background:none;
+}
+.places{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+margin-top:30px;
+}
+.place{
+width:900px;
+background:white;
+border-radius:15px;
+box-shadow:0px 0px 10px gray;
+display:flex;
+align-items:center;
+padding:20px;
+gap:30px;
+}
+.place img{
+width:300px;
+height:200px;
+border-radius:10px;
+}
+.slider{
+width:100%;
+overflow:hidden;
+white-space:nowrap;
+background:transparent;
+padding:20px;
+}
+.slide-track{
+display:flex;
+animation:scroll 15s linear infinite;
+}
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-1500px);
+}
+}
+.slider img{
+width:500px;
+height:300px;
+margin:10px;
+border-radius:15px;
+}
+.details{
+text-align:left;
+}
+button{
+width:180px;
+height:45px;
+border-radius:25px;
+background:green;
+color:white;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<h1>Beach Destinations</h1>
+<div class="places">
+<div class="place">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6_q8mnNe19wfjTn8tlqd9P4V6Fl2eJZYjudURapqc6Bx_7LVh5JnK2Yt&s=10">
+<div class="details">
+<h2>Goa</h2>
+<button onclick="openGoaPage()"
+style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://s7ap1.scene7.com/is/image/incredibleindia/om-beach-gokarna-karnataka-city-ff?qlt=82&ts=1742188407781">
+<div class="details">
+<h2>Gokarna</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEqjKQ3rZPmef0XsJlEwqmr01Vv00pQdE4COslb3BxhKyT_Ftfu5_v6k&s=10">
+<div class="details">
+<h2>Pondicherry</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://s7ap1.scene7.com/is/image/incredibleindia/kovalam-beach-thiruvananthapuram-kerala-1-attr-hero?qlt=82&ts=1742152480819">
+<div class="details">
+<h2>Kovalam</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://s7ap1.scene7.com/is/image/incredibleindia/2-diu-fort-diu-attr-hero-1?qlt=82&ts=1726737809175">
+<div class="details">
+<h2>Diu</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://holaciti.com/assets/place/1766145568place.webp">
+<div class="details">
+<h2>Tarkali</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://img.magnific.com/premium-photo/varkala-beach-kerala-india_163782-1845.jpg">
+<div class="details">
+<h2>Varkala</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://media.istockphoto.com/id/1444930860/photo/sea-beach-at-sunrise-with-moody-sky-at-puri-odisha-india.jpg?s=612x612&w=0&k=20&c=MJw2a5H33tCQeaOGztl-DzBoHYKbmJY4JMCXjXDQ2Hg=">
+<div class="details">
+<h2>Puri Beach</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://img.magnific.com/premium-photo/chennai-india-beach-marina-beach-longest-urban-natural-beach-bay-bengal-coast_817921-75004.jpg?semt=ais_hybrid&w=740&q=80">
+<div class="details">
+<h2>Marina Beach</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+<div class="place">
+<img src="https://www.shutterstock.com/shutterstock/videos/3395443183/thumb/1.jpg?ip=x480">
+<div class="details">
+<h2>Radhanagar Beach</h2>
+<button style="width:180px; height:45px; border-radius:25px; background-color:lightgrey; color:black;  font-size:18px; cursor:pointer;">
+Book Now
+</button>
+</div>
+</div>
+</div>
+<script>
+function openGoaPage()
+{
+var newWindow = window.open("", "_blank");
+newWindow.document.write(`
+<html>
+<head>
+<title>Goa Tour Package</title>
+<style>
+body{
+font-family:inherit;
+text-align:center;
+margin:0;
+background-image:url("https://sereneworld.in/uploads/package/1706162910_amb1-min.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
+.slider{
+width:100%;
+overflow:hidden;
+white-space:nowrap;
+background:white;
+padding:20px;
+}
+.slider img{
+width:500px;
+height:300px;
+margin:10px;
+border-radius:15px;
+}
+.hotelbox{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:20px;
+}
+.box{
+width:250px;
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0px 0px 10px gray;
+}
+.box img{
+width:300px;
+height:150px;
+border-radius:10px;
+}
+button{
+width:180px;
+height:45px;
+border:none;
+border-radius:25px;
+background:lightgrey;
+color:black;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<h1 style="margin-top:20px;">
+GOA TOUR PACKAGE
+</h1>
+<style>
+.hotelbox{
+display:flex;
+justify-content:center;
+gap:100px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+.box{
+width:650px;
+min-height:650px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0px 0px 15px gray;
+text-align:center;
+}
+.box img{
+width:600px;
+height:320px;
+border-radius:15px;
+}
+.box h2{
+font-size:30px;
+}
+.box p{
+font-size:22px;
+line-height:35px;
+}
+button{
+width:200px;
+height:45px;
+border:none;
+border-radius:25px;
+background:lightgrey;
+color:black;
+font-size:20px;
+cursor:pointer;
+}
+.slider{
+width:100%;
+overflow:hidden;
+white-space:nowrap;
+background:transparent;
+padding:20px;
+}
+.slide-track{
+display:flex;
+width:max-content;
+animation:scroll 15s linear infinite;
+}
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-20%);
+}
+}
+.slider img{
+width:500px;
+height:300px;
+margin:10px;
+border-radius:15px;
+}
+</style>
+<div class="slider" style="background:transparent;">
+<div class="slide-track">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDxp5vFOJOQtyYyO7HiYFIeT6vOjR-PFewfmj6YgXgCu5Ol-HHysjGRtJ&s=10">
+<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/600x400-39.jpg:cf-webp:w-450:h-240">
+<img src="https://www.indianpanorama.in/assets/images/tourpackages/banner/beaches-of-goa.webp">
+<img src="https://www.thestupidbear.com/wp-content/uploads/2019/03/Goa_2-1024x762.jpg">
+<img src="https://www.clubmahindra.com/blog/media/section_images/shuttersto-6d71496a31ac52b.jpg">
+<img src="https://www.thebluekite.com/uploads/blog/146-Soro-Panjim-900-x-550-px2025-11-06-12-06-01-0898952001762430761.jpg">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDxp5vFOJOQtyYyO7HiYFIeT6vOjR-PFewfmj6YgXgCu5Ol-HHysjGRtJ&s=10">
+<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/600x400-39.jpg:cf-webp:w-450:h-240">
+<img src="https://www.indianpanorama.in/assets/images/tourpackages/banner/beaches-of-goa.webp">
+<img src="https://www.thestupidbear.com/wp-content/uploads/2019/03/Goa_2-1024x762.jpg">
+<img src="https://www.clubmahindra.com/blog/media/section_images/shuttersto-6d71496a31ac52b.jpg">
+<img src="https://www.thebluekite.com/uploads/blog/146-Soro-Panjim-900-x-550-px2025-11-06-12-06-01-0898952001762430761.jpg">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDxp5vFOJOQtyYyO7HiYFIeT6vOjR-PFewfmj6YgXgCu5Ol-HHysjGRtJ&s=10">
+<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/600x400-39.jpg:cf-webp:w-450:h-240">
+<img src="https://www.indianpanorama.in/assets/images/tourpackages/banner/beaches-of-goa.webp">
+<img src="https://www.thestupidbear.com/wp-content/uploads/2019/03/Goa_2-1024x762.jpg">
+<img src="https://www.clubmahindra.com/blog/media/section_images/shuttersto-6d71496a31ac52b.jpg">
+<img src="https://www.thebluekite.com/uploads/blog/146-Soro-Panjim-900-x-550-px2025-11-06-12-06-01-0898952001762430761.jpg">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDxp5vFOJOQtyYyO7HiYFIeT6vOjR-PFewfmj6YgXgCu5Ol-HHysjGRtJ&s=10">
+<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/600x400-39.jpg:cf-webp:w-450:h-240">
+<img src="https://www.indianpanorama.in/assets/images/tourpackages/banner/beaches-of-goa.webp">
+<img src="https://www.thestupidbear.com/wp-content/uploads/2019/03/Goa_2-1024x762.jpg">
+<img src="https://www.clubmahindra.com/blog/media/section_images/shuttersto-6d71496a31ac52b.jpg">
+<img src="https://www.thebluekite.com/uploads/blog/146-Soro-Panjim-900-x-550-px2025-11-06-12-06-01-0898952001762430761.jpg">
+</div>
+</div>
+<h1 style="margin-top:30px;">Choose Your Hotel</h1>
+<div class="hotelbox">
+<div class="box">
+<h1> 5 Star Hotels ⭐</h1>
+<br><br>
+<img src="https://www.theholidayvilla.in/images/balkon/1.jpg">
+<br><br><br><br>
+<button>Book Rooms</button>
+</div>
+<div class="box">
+<h1>3 Star Hotels ⭐</h1>
+<br><br>
+<img src="https://images.trvl-media.com/lodging/115000000/114270000/114264100/114264003/84f9f0be_y.jpg?impolicy=resizecrop&rw=402&ra=fit">
+<br><br><br><br>
+<button>Book Rooms</button>
+</div>
+</div>
+<h2>Travelling Price : ₹9,999 Per Person</h2>
+<br>
+<button>Add To Cart</button>
+</body>
+</html>
+`);
+}
+</script>
+</body>
+</html>
